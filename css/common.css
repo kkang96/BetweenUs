@@ -3,7 +3,7 @@ body {overflow: hidden;}
 #wrap .main_color01 {color:#f6b664;}
 #wrap .main_color02 {color:#6e9a61;}
 
-#wrap {background: #eaeaea; height: 100vh;}
+#wrap {background: #eaeaea; height: 100vh; overflow: hidden;}
 /* main 페이지_contents */
 #wrap #contents {display:flex; margin:auto; width:95vw; height: 94vh;}
 /* swiper */
