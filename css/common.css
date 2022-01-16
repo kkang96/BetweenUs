@@ -5,7 +5,7 @@ body {overflow: hidden;}
 
 #wrap {background: #eaeaea; height: 100vh; overflow: hidden;}
 /* main 페이지_contents */
-#wrap #contents {display:flex; margin:auto; width:95vw; height: 94vh;}
+#wrap #contents {display:flex; margin:auto; width:95vw; height: 94%;}
 /* swiper */
 #wrap #contents .swiper {margin:auto; height: 92vh;}
 #wrap #contents .swiper .swiper-wrapper .swiper-slide {
