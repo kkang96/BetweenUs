@@ -1,0 +1,45 @@
+
+body {overflow: hidden;}
+#wrap .main_color01 {color:#f6b664;}
+#wrap .main_color02 {color:#6e9a61;}
+
+#wrap {background: #eaeaea; height: 100vh;}
+/* main 페이지_contents */
+#wrap #contents {display:flex; margin:auto; width:95vw; height: 94vh;}
+/* swiper */
+#wrap #contents .swiper {margin:auto; height: 92vh;}
+#wrap #contents .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#wrap #contents .swiper .swiper-pagination .swiper-pagination-bullet-active{ background:#6e9a61; }
+
+/* main 페이지_footer */
+#wrap #footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%; height: 6vh; color: #ffffff; background: #6e9a61; text-align: center;
+}
+#wrap #footer .footer_btn {margin: auto; width: 100%; vertical-align: middle;}
+
+
+@media all and (min-width: 640px) {
+  #wrap {margin: auto; width: 640px;}
+  #wrap #contents {width: 80vw}
+  #wrap #footer {width: 640px;}
+}
