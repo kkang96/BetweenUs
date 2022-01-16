@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/common.css" />
@@ -27,7 +30,7 @@
       document.querySelector('body').removeEventListener('onclick', this.removeEvent);
       document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
     }
-    
+
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
     window.addEventListener('resize', () => {
@@ -43,7 +46,14 @@
       <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide slide_01">
+            <div class="slide_01_inner">
+              <p> 우리끼리, </p>
+              <p> 친구끼리, </p>
+              <p> 가족끼리, </p>
+              <p class="main_color02"> 끼리, 끼리 </p>
+            </div>
+          </div>
           <div class="swiper-slide">Slide 2</div>
           <div class="swiper-slide">Slide 3</div>
           <div class="swiper-slide">Slide 4</div>
