@@ -3,6 +3,7 @@ body {
   overflow: hidden;
   touch-action: none;
 }
+
 #wrap .main_color01 {color:#f6b664;}
 #wrap .main_color02 {color:#6e9a61;}
 
@@ -31,10 +32,11 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 { font-weight: 300; text-align: center; }
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner { margin: 150px auto; text-align: center; }
+#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner { margin: auto; text-align: center; font-weight: 300; }
 #wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner p { font-size: 18px; font-weight: bolder;}
 #wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner p:last-child { margin-top: 20px; font-size: 25px; font-weight: bold;} 
+
+#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_02 { font-weight: 300; text-align: center; }
 #wrap #contents .swiper .swiper-pagination .swiper-pagination-bullet-active{ background:#6e9a61; }
 
 /* main 페이지_footer */
