@@ -7,8 +7,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <style>
+      #wrap { padding: 15px; background: #ffffff; }
+      #wrap table { width:100%; height:auto; border: 1px solid #eaeaea; }
+      #wrap table, #wrap table tr, #wrap table tr th,  #wrap table tr td { padding: 1vh; border: 1px solid #eaeaea; text-align: center; }
+      #wrap table tr th { width:33%; height: 25vh; }
+      #wrap table tr th img { width: 100% }
+      #wrap table tr td { width:33%; height: 6vh;  }
+      #wrap table tr td span { display: inline-block; width: 100%; height:100%; border: 2px solid #6e9a61; border-radius: 10px; background: #ffffff; color: #6e9a61; line-height: 4vh; cursor: pointer; }
+      #wrap table tr td span:hover { background: #6e9a61; color: #ffffff; }
+    </style>
   </head>
   <body>
-    <div id="wrap"></div>
+    <div id="wrap">
+      <table>
+        <tr>
+          <th><img src="./images/splash.png"></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>
+            <span onclick="location.href='./splash/splash.html'">Splash</span>
+          </td>
+          <td>
+            <span onclick="location.href='./login/login01.html'">Login-01</span>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
