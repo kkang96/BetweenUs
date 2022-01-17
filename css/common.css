@@ -32,6 +32,7 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
+#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 { margin: auto; }
 #wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner { margin: auto; text-align: center; font-weight: 300; }
 #wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner p { font-size: 18px; font-weight: bolder;}
 #wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner p:last-child { margin-top: 20px; font-size: 25px; font-weight: bold;} 
