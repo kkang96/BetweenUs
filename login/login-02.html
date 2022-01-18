@@ -37,64 +37,20 @@
 </head>
 
 <body>
-  <div id="wrap">
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="slide_inner">
-            <p>우리끼리,</p>
-            <p>친구끼리,</p>
-            <p>가족끼리,</p>
-            <p class="splash_title">끼리, 끼리</p>
-
-          <img src="../images/cuteboy_01.png">
-        </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide_inner">
-            <p>기억하고 싶은</p>
-            <p>나의 여행 이야기</p>
-
-            <img src="../images/cuteboy_02.png">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slide_inner">
-            <p>그때 그 느낌을</p>
-            <p>기억해 봐요 !</p>
-          <img src="../images/cuteboy_03.png">
-        </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
+  <div id="wrap" class="login_wrap">
+    <span class="back_btn"><</span>
+    <div class="login_success">
+      <img src="../images/firecracker.png">
+      <p>OOO님, 환영합니다!</p>
+      <p>지금 바로 만나보세요.</p>
     </div>
     <div class="login_btn_wrap">
-      <p>끼리, 끼리를 보다 간편하게 시작해보세요.</p>
-      <img src="../images/icon_naver.png">
-      <img src="../images/icon_facebook.png">
-      <img src="../images/icon_kakao.png">
+      <span>시작하기</span>
     </div>
   </div>
 
-
-  <!-- Swiper JS -->
   <script src="../js/jquery.min.js"></script>
   <script src="../js/jquery-1.12.4.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script type="text/javascript">
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      loopAdditionalSlides: 1,
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
 </body>
 
 </html>

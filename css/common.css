@@ -23,26 +23,30 @@ body {
   align-items: center;
 }
 
-#wrap .swiper .swiper-wrapper .swiper-slide { margin: auto; }
-#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner_txt { margin: auto; text-align: center; font-weight: 300; }
-#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner_txt p { font-size: 18px; }
-#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner_txt p.splash_title { margin-top: 15px; font-size: 20px; font-weight: bold;}
+#wrap .swiper .swiper-wrapper .swiper-slide { display: flex; margin: auto; }
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner { margin: auto; text-align: center; font-weight: 300; }
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner p { font-size: 16px; }
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner p.splash_title { margin-top: 15px; font-size: 18px; font-weight: bold;}
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner img { margin-top: 30px}
 
 #wrap .swiper .swiper-pagination .swiper-pagination-bullet { background:#cccccc; opacity: 1; }
 #wrap .swiper .swiper-pagination .swiper-pagination-bullet-active { background:#444444; }
 
+#wrap.login_wrap { display: flex; }
+#wrap.login_wrap .back_btn { position: fixed; top: 25px; left: 25px; font-size: 25px; }
+#wrap.login_wrap .login_success { margin: auto; text-align: center; }
+#wrap.login_wrap .login_success img { margin-bottom: 15px; }
 
-/* main 페이지_footer */
-#wrap #login_btn_wrap {
+#wrap .login_btn_wrap {
   position: fixed;
-  bottom: 50px;
-  width: calc(100% - 32px); height: 10vh; text-align: center;
+  bottom: 20px;
+  width: calc(100% - 32px); text-align: center;
 }
-#wrap #login_btn_wrap p { display: block; }
-#wrap #login_btn_wrap img { display:inline-block; padding:15px 20px; margin: auto; }
-
+#wrap .login_btn_wrap p { display: block; color: #999999; font-size: 12px; }
+#wrap .login_btn_wrap img { display:inline-block; padding:10px 20px; margin: auto; }
+#wrap .login_btn_wrap span { display: inline-block; width: 100%; padding: 8px; background: #A8D2F8; color: #ffffff; border-radius: 50px; }
 
 @media all and (min-width: 820px) {
   #wrap { margin: auto; width: 820px; }
-  #wrap #login_btn_wrap { width: 820px; }
+  #wrap .login_btn_wrap { width: 820px; }
 }
