@@ -4,23 +4,12 @@ body {
   touch-action: none;
 }
 
-#wrap .main_color01 {color:#f6b664;}
-#wrap .main_color02 {color:#6e9a61;}
+#wrap { padding: 16px; width:100%; height:100vh; height: calc(var(--vh, 1vh) * 100); background:#ffffff; overflow-y: hidden; }
 
-#wrap {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100); 
-  background: #ffffff; 
-  overflow-y: hidden;
-  line-height: 1.5;
-}
-
-/* main 페이지 */
-#wrap #contents {display: flex; margin: auto; width: 100vw; height: calc(var(--vh, 1vh) * 92); overflow-y: hidden;}
 /* swiper */
-#wrap #contents .swiper { margin:auto; height: calc(var(--vh, 1vh) * 92); }
-#wrap #contents .swiper .swiper-wrapper .swiper-slide {
-  display: -webkit-box;
+#wrap .swiper { margin:auto; height: calc(var(--vh, 1vh) * 80); }
+#wrap .swiper .swiper-wrapper .swiper-slide {
+  /* display: -webkit-box; */
   font-size: 18px;
   background: #ffffff;
   text-align: center;
@@ -33,47 +22,27 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 { margin: auto; }
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner { margin: auto; text-align: center; font-weight: 300; }
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner p { font-size: 18px; font-weight: bolder;}
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_01 .slide_01_inner p:last-child { margin-top: 20px; font-size: 25px; font-weight: bold;} 
 
-#wrap #contents .swiper .swiper-wrapper .swiper-slide.slide_02 { font-weight: 300; text-align: center; }
-#wrap #contents .swiper .swiper-pagination .swiper-pagination-bullet-active{ background:#6e9a61; }
+#wrap .swiper .swiper-wrapper .swiper-slide { margin: auto; }
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner_txt { margin: auto; text-align: center; font-weight: 300; }
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner_txt p { font-size: 18px; }
+#wrap .swiper .swiper-wrapper .swiper-slide .slide_inner_txt p.splash_title { margin-top: 15px; font-size: 20px; font-weight: bold;}
+
+#wrap .swiper .swiper-pagination .swiper-pagination-bullet { background:#cccccc; opacity: 1; }
+#wrap .swiper .swiper-pagination .swiper-pagination-bullet-active { background:#444444; }
 
 
 /* main 페이지_footer */
-#wrap #footer {
+#wrap #login_btn_wrap {
   position: fixed;
-  bottom: 0;
-  display: flex;
-  width: 100%; height: 8vh; color: #ffffff; background: #6e9a61; text-align: center;
+  bottom: 50px;
+  width: calc(100% - 32px); height: 10vh; text-align: center;
 }
-#wrap #footer .footer_btn {margin: auto; width: 100%; vertical-align: middle;}
+#wrap #login_btn_wrap p { display: block; }
+#wrap #login_btn_wrap img { display:inline-block; padding:15px 20px; margin: auto; }
 
 
-/* login 페이지 */
-#wrap .login_contents { margin-top: 70px; margin-left: 15px; }
-#wrap .login_contents p { font-size: 20px; font-weight: bold; }
-
-#wrap .login_wrap { position: fixed; bottom: 30px; width: 100vw; }
-#wrap .login_wrap .login_box { margin: 0px 15px 45px 15px; }
-#wrap .login_wrap .login_box ul li { display: table; width: 100%; }
-#wrap .login_wrap .login_box ul li + li { margin-top: 20px; }
-#wrap .login_wrap .login_box ul li label { display: table-cell; vertical-align: middle; text-align: left; width: 30%; padding-right: 20px; color: #1b1b1b; }
-#wrap .login_wrap .login_box ul li div { display: table-cell; vertical-align: middle; width: 70%; font-size: 0px; }
-#wrap .login_wrap .login_box ul li div input { display: block; width: 100%; padding: 8px 10px; border: 0; border-bottom: 1px solid #1b1b1b; border-radius: 0; }
-#wrap .login_wrap .login_box ul li div input::placeholder { color:#d8d9d8; font-size: 0.9rem; }
-#wrap .login_wrap span { margin: 12px 15px; padding: 12px; display: block; color:#ffffff; text-align: center; cursor: pointer; }
-#wrap .login_wrap span.naver { background: #19ce60; }
-#wrap .login_wrap span.kakao { background: #ffdc00; }
-#wrap .login_wrap span.facebook { background: #1877f2; }
-#wrap .login_wrap span.register { color: #1b1b1b; }
-
-
-@media all and (min-width: 640px) {
-  #wrap {margin: auto; width: 640px;}
-  #wrap #contents {width: 640px;}
-  #wrap #footer {width: 640px;}
-  #wrap #login_btn_wrap {width:640px;} 
+@media all and (min-width: 820px) {
+  #wrap { margin: auto; width: 820px; }
+  #wrap #login_btn_wrap { width: 820px; }
 }

@@ -7,38 +7,93 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
   <title>Document</title>
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/jquery-1.12.4.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/common.css" />
+  <script type="text/javascript">
+    disableScroll = () => {
+      document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
+      document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
+      document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
+    }
+    removeEvent = e => {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    enableScroll = () => {
+      document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
+      document.querySelector('body').removeEventListener('onclick', this.removeEvent);
+      document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
+    }
+
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    })
+  </script>
 </head>
-  
-  <body>
-    <div id="wrap">
-      <div class="login_contents">
-        <p>로그인 후,</p>
-        <p>더 많은 서비스를 만나보세요:)</p>
-      </div>
-      <div class="login_wrap">
-        <div class="login_box">
-          <ul>
-            <li>
-              <label for="">아이디</label>
-              <div><input type="text" name="mId" id="mId" class="mId" /> </div>
-            </li>
-            <li>
-              <label for="">비밀번호</label>
-              <div><input type="password" name="mPass" id="mPass" class="mPass" /></div>
-            </li>
-          </ul>
+
+<body>
+  <div id="wrap">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide_inner_txt">
+            <p>우리끼리,</p>
+            <p>친구끼리,</p>
+            <p>가족끼리,</p>
+
+            <p class="splash_title">끼리, 끼리</p>
+          </div>
+          <img src="../images/cuteboy_01.png">
         </div>
-        <span class="naver">네이버로 로그인</span>
-        <span class="kakao">카카오로 로그인</span>
-        <span class="facebook">페이스북으로 로그인</span>
-        <span class="register">회원가입</span>
+        <div class="swiper-slide">
+          <div class="slide_inner_txt">
+            <p>기억하고 싶은</p>
+            <p>나의 여행 이야기</p>
+          </div>
+          <img src="../images/cuteboy_02.png">
+        </div>
+        <div class="swiper-slide">
+          <div class="slide_inner_txt">
+            <p>그때 그 느낌을</p>
+            <p>기억해 봐요 !</p>
+          </div>
+          <img src="../images/cuteboy_03.png">
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
-  </body>
+    <div id="login_btn_wrap">
+      <p>끼리, 끼리를 보다 간편하게 시작해보세요.</p>
+      <img src="../images/icon_naver.png">
+      <img src="../images/icon_facebook.png">
+      <img src="../images/icon_kakao.png">
+    </div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-1.12.4.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script type="text/javascript">
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      loopAdditionalSlides: 1,
+      // autoplay: {
+      //   delay: 3000,
+      // },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
 
 </html>
